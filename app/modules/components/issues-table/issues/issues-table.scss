@@ -224,6 +224,7 @@
         }
     }
     .modified-field,
+    .created-field,
     .assigned-field,
     .attachments-field,
     .options-field,
@@ -245,6 +246,7 @@
             max-width: 6rem;
         }
     }
+    .created-field,
     .modified-field {
         flex-basis: 100px;
         @include until($widescreen) {
