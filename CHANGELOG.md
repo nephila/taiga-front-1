@@ -1,8 +1,23 @@
 # Changelog
 
-## 6.5.0 (unreleased
+## 6.6.0 (unreleased)
 
 - ...
+
+## 6.5.1 (2022-01-27)
+
+- Enhance text collapse on long text by not dividing words.
+- reorder data display in collapsed columns.
+
+## 6.5.0 (2022-01-24)
+
+- fix: prevent wrong text in collapsed columns in kanban for vertical languages (by @twovillage)
+- fix: prevent overflowing long texts in layouts. (by @RyoNkmr)
+
+## 6.4.3 (2021-10-27)
+
+- fix: prevent taskboard column flicker after drag & drop
+- Update locales
 
 ## 6.4.2 (2021-09-16)
 

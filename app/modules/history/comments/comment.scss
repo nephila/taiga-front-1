@@ -160,6 +160,7 @@
 
 .comment-text {
     max-width: 80rem;
+    word-break: break-word;
     &.wysiwyg {
         margin-bottom: 0;
         padding: 0;
