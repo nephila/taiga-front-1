@@ -1,8 +1,30 @@
 # Changelog
 
-## 6.6.0 (unreleased)
+## 6.7.1 (unreleased)
 
 - ...
+
+## 6.7.0 (2023-06-12)
+
+- Fix style for error messages in auth forms (thanks to [@DPRIYATHAM](https://github.com/DPRIYATHAM))
+
+## 6.6.2 (2023-04-25)
+
+- Fix error with attachment images linked in different wiki pages.
+
+## 6.6.1 (2023-04-12)
+
+- Improve the reconnection system of the events service.
+
+## 6.6.0 (2023-03-06)
+
+- Upgrade to node 16.19.1
+- Update base image for docker
+
+## 6.5.2 (2022-09-26)
+
+- Updated links to the Taiga community site.
+- Update locales
 
 ## 6.5.1 (2022-01-27)
 

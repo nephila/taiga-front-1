@@ -14,10 +14,10 @@
         "UNLINK": "Separar",
         "CREATE": "Criar",
         "ADD": "Adicionar",
-        "BACK": "Back",
+        "BACK": "Voltar",
         "COPY_TO_CLIPBOARD": "Copiar para área de transferência",
         "COPIED_TO_CLIPBOARD": "O texto foi copiado para a área de transferência",
-        "MOVE_TO_TOP": "Move to top",
+        "MOVE_TO_TOP": "Mover para cima",
         "EDIT": "Editar",
         "DRAG": "Arrastar",
         "TAG_LINE": "Sua ferramenta de gerenciamento de projetos ágil, gratuita e de código aberto",
@@ -27,7 +27,7 @@
         "BLOCKED": "Bloqueado",
         "UNBLOCK": "Desbloquear",
         "UNBLOCK_TITLE": "Desbloquear este item",
-        "BLOCKED_NOTE": "Por que esta bloqueado?",
+        "BLOCKED_NOTE": "Por que está bloqueado?",
         "BLOCKED_REASON": "Por favor, explique a razão",
         "CREATED_BY": "Criado por {{fullDisplayName}}",
         "CLOSE": "fechar",
@@ -40,10 +40,10 @@
         "NEXT": "Próximo",
         "LOGOUT": "Sair",
         "EXTERNAL_USER": "um usuário externo",
-        "GENERIC_ERROR": "The Taiga says {{error}}.",
-        "IOCAINE_TEXT": "This member is feeling a bit overwhelmed by this task. They will become immune to the iocaine poison over time with your help. For now, they may need a hug.",
-        "CLIENT_REQUIREMENT": "A client requirement is a new requirement that was not previously expected and is required to be part of the project",
-        "TEAM_REQUIREMENT": "A team requirement is a requirement that must exist in the project but should have no cost for the client",
+        "GENERIC_ERROR": "A Taiga diz {{error}}.",
+        "IOCAINE_TEXT": "Este membro está se sentindo um pouco sobrecarregado por esta tarefa. Com o tempo e com a sua ajuda, estará imune ao veneno de iocaína. Por ora, talvez precise de um abraço.",
+        "CLIENT_REQUIREMENT": "Um requisito de cliente é um novo requisito inesperado que deve fazer parte do projeto",
+        "TEAM_REQUIREMENT": "Um requisito de equipe é um requisito que deve existir no projeto mas que não deve acarretar nenhum custo para o cliente",
         "OWNER": "Dono do Projeto",
         "CAPSLOCK_WARNING": "Seja cuidadoso! Você está escrevendo em letras maiúsculas e esse campo é case sensitive, ou seja, trata com distinção as letras maiúsculas das minúsculas.",
         "CONFIRM_CLOSE_EDIT_MODE_TITLE": "Você tem certeza que quer fechar o modo de edição?",
@@ -55,11 +55,11 @@
             "DELETE": "Excluir cartão",
             "DELETE_ISSUE": "Problema excluído",
             "DETACH_ISSUE_FROM_SPRINT": "Detach from sprint",
-            "PTS": "{{pts}} pts",
+            "PTS": "{{pts}} pontos",
             "DUE_DATE": "Due date: {{date}}",
             "NO_PTS": "N/E",
-            "ESTIMATION": "Estimation",
-            "TASKS": "{{completed}} tasks of {{total}} completed",
+            "ESTIMATION": "Estimativa",
+            "TASKS": "{{completed}} tarefas de {{total}} completadas",
             "EXTRA_ASSIGNED_USERS": "{{total}} more assigned users",
             "MOVE_TO_TOP": "Mover para o topo"
         },
@@ -558,9 +558,9 @@
             "DELETE": "Excluir este projeto",
             "CHANGE_LOGO": "Alterar logo",
             "ACTION_USE_DEFAULT_LOGO": "Usar imagem padrão",
-            "MAX_PRIVATE_PROJECTS": "Você atingiu o número máximo de projetos privados permitidos para seu plano atual",
+            "MAX_PRIVATE_PROJECTS": "Você atingiu o número máximo de projetos privados que seu plano atual permite",
             "MAX_PRIVATE_PROJECTS_MEMBERS": "O número máximo de membros para projetos privados foi excedido",
-            "MAX_PUBLIC_PROJECTS": "Infelizmente você atingiu o número máximo de projetos público permitidos para seu plano atual",
+            "MAX_PUBLIC_PROJECTS": "Infelizmente, você atingiu o número máximo de projetos públicos que seu plano atual permite",
             "MAX_PUBLIC_PROJECTS_MEMBERS": "Este projeto atingiu o seu limite atual de membros para projetos públicos",
             "PROJECT_OWNER": "Dono do projeto",
             "REQUEST_OWNERSHIP": "Solicitar propriedade",
@@ -570,7 +570,8 @@
             "REQUEST_OWNERSHIP_SUCCESS": "Vamos notificar o dono do projeto",
             "CHANGE_OWNER": "Mudar dono",
             "CHANGE_OWNER_SUCCESS_TITLE": "Ok, sua requisição foi enviada!",
-            "CHANGE_OWNER_SUCCESS_DESC": "Nós notificaremos você por email se a requisição de propriedade do projeto for aceita ou recusada"
+            "CHANGE_OWNER_SUCCESS_DESC": "Nós notificaremos você por email se a requisição de propriedade do projeto for aceita ou recusada",
+            "REQUEST_OWNERSHIP_LIMIT": "Voce alcançou seu limite de {{maxProjects}} projetos privados"
         },
         "REPORTS": {
             "TITLE": "Relatórios",
@@ -836,8 +837,10 @@
             "ADD_COMMENT": "Você gostaria de adicionar um comentário para o dono do projeto?",
             "UNLIMITED_PROJECTS": "Ilimitado",
             "OWNER_MESSAGE": {
-                "PRIVATE": "Por favor, lembre-se que você pode ser dono de até <strong>{{maxProjects}}</strong> projetos privados. Você, atualmente, é dono de <strong>{{currentProjects}}</strong> projetos privados",
-                "PUBLIC": "Por favor, lembre-se que você pode ser dono de até <strong>{{maxProjects}}</strong> projetos públicos. Você, atualmente, é dono de <strong>{{currentProjects}}</strong> projetos públicos"
+                "PRIVATE": "Por favor, lembre-se que você pode ser dono de até <strong>{{maxProjects}}</strong> projetos privados. Você, atualmente, é dono de <strong>{{currentProjects}}</strong> projetos privados.",
+                "PUBLIC": "Por favor, lembre-se de que você pode ser dono de até <strong>{{maxProjects}}</strong> projetos públicos. Você atualmente é dono de <strong>{{currentProjects}}</strong> projetos públicos.",
+                "PUBLIC_EXCEEDED": "Atualmente você tem <strong>{{currentProjects}} projetos públicos</strong> do máximo que seu plano permite.",
+                "PRIVATE_EXCEEDED": "Atualmente você tem <strong>{{currentProjects}} projetos privados </strong> do máximo que seu plano permite."
             },
             "CANT_BE_OWNED": "No momento, você não pode se tornar dono de um projeto desse tipo. Se você quiser se tornar dono desse projeto, por favor, entre em contato com os administradores para mudarem as configurações da sua conta para habilitar a propriedade do projeto."
         },
@@ -947,7 +950,9 @@
             "CHANGE_PASSWORD": "Alterar senha",
             "DASHBOARD_TITLE": "Painel",
             "DISCOVER_TITLE": "Descobrir projetos em destaques",
-            "DISCOVER": "Descubra"
+            "DISCOVER": "Descubra",
+            "TAIGA_COMMUNITY": "Comunidade Taiga",
+            "TAIGA_COMMUNITY_TITLE": "Vá para a Comunidade do Taiga"
         },
         "LIKE_BUTTON": {
             "LIKE": "Curtir",
@@ -1116,6 +1121,18 @@
                 "CREATE_NEW_ISSUES": "Converta sub problemas para novos problemas Taiga",
                 "NOT_CREATE_NEW_ISSUES": "Não importe sub problemas"
             }
+        },
+        "NEWSLETTER_OPENING": {
+            "LIGHTBOX_TITLE": "Você gostaria de receber notícias sobre o Taiga?",
+            "CONFIRMATION": "Sim, mande-me notícias, atualizações de produtos e recomendações sobre Taiga.",
+            "SUBSCRIBED": "Você está inscrito",
+            "SAVED_PREFERENCE": "Suas preferências foram salvas com sucesso",
+            "SUBSCRIBE": "Inscrever-se",
+            "NOTIFY_EXPLANATION": "Enviaremos notícias, atualizações de produtos e recomendações sobre a Taiga.",
+            "DONT_ASK": "Não pergunte novamente",
+            "NO_SHARE": "Sua privacidade é importante para nós (veja nossa <a href=\"https://www.taiga.io/privacy-policy\" title=\"Ir para política de privacidade\" target=\"_blank\">política de privacidade</a>).",
+            "SAVE_PREFERENCE": "SALVAR PREFERÊNCIAS",
+            "OPT_OUT": "Nós enviaremos para você apenas e-mails relevantes (menos de 6 por ano). Você pode cancelar a inscrição a qualquer momento enviando um e-mail para <a href=\"mailto:support@taiga.io\" target=\"_blank\">support@taiga.io</a> com o assunto “Cancelar inscrição” ou através do link em qualquer um de nossos boletins."
         }
     },
     "LIGHTBOX": {
@@ -1151,14 +1168,16 @@
             "HELP_TEXT": "Se os usuários já estiverem registrados no Taiga, eles serão adicionados automaticamente. Caso contrário, eles receberão um convite."
         },
         "FEEDBACK": {
-            "TITLE": "Pergunte algo",
+            "TITLE": "Suporte do Taiga",
             "COMMENT": "Deixe uma mensagem",
             "ACTION_SEND": "Enviar mensagem",
             "YOU_CAN_ALSO": "Você também pode:",
             "CREATE": "Crie um problema sobre este ",
             "PUBLIC": "public Taiga project",
             "EMAIL": "Envie-nos um e-mail diretamente para ",
-            "SUPPORT": "support@taiga.io"
+            "SUPPORT": "support@taiga.io",
+            "VISIT": "Visite nosso ",
+            "FAQ": "Perguntas frequentes"
         },
         "SEARCH": {
             "TITLE": "Procurar",
@@ -1194,7 +1213,10 @@
             "SELECT_STATUS": "Select status",
             "DEFAULT": "Default",
             "ERROR_STATUS": "Changes cannot be saved because there is a problem with the selected status.",
-            "ERROR_SWIMLANE": "Changes cannot be saved because there is a problem with the selected swimlane."
+            "ERROR_SWIMLANE": "Changes cannot be saved because there is a problem with the selected swimlane.",
+            "LOCATION": "Localização",
+            "CREATE_BOTTOM": "embaixo",
+            "CREATE_TOP": "acima"
         },
         "DISABLE_KANBAN": {
             "TITLE": "Disable kanban",
@@ -1551,7 +1573,8 @@
         "CLOSE": "Fechar Notificação",
         "MAIL": "Atividade",
         "DESKTOP": "Notificações da área de trabalho usando alertas do navegador",
-        "ASK_DELETE": "Você tem certeza que quer excluir?"
+        "ASK_DELETE": "Você tem certeza que quer excluir?",
+        "COMMUNICATION": "Comunicações de Taiga"
     },
     "CANCEL_ACCOUNT": {
         "TITLE": "Cancelar sua conta",
