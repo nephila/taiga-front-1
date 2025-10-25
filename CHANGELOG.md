@@ -1,8 +1,23 @@
 # Changelog
 
-## 6.8.1 (unreleased)
+## 6.9.1 (unreleased)
 
-...
+- ...
+
+## 6.9.0 (2025-10-13)
+
+- Compatible with Taiga 6.9.0.
+
+## 6.8.2 (2025-01-13)
+
+- Fix epic change color timeline message.
+- Fix epic caret icons rotation.
+- Fix search users with accents.
+
+## 6.8.1 (2024-07-23)
+
+- Prevent XSS attack.
+- Update locales.
 
 ## 6.8.0 (2024-04-03)
 
